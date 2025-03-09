@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil & Crop Recommendation</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+    <header>
+        <h1>Vignan's Institute of Information Technology</h1>
+        <h2>Soil & Crop Recommendation System</h2>
+    </header>
+
+    <div class="container">
+        <h2>Enter Soil Details</h2>
+
+        <label>pH Value:</label>
+        <input type="number" id="phValue" min="0" max="14" step="0.1" required>
+
+        <label>Soil Color:</label>
+        <select id="soilColor">
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="brown">Brown</option>
+            <option value="yellow">Yellow</option>
+        </select>
+
+        <label>Location:</label>
+        <input type="text" id="location" placeholder="Enter your location" required>
+
+        <label>Season:</label>
+        <select id="season">
+            <option value="summer">Summer</option>
+            <option value="winter">Winter</option>
+            <option value="rainy">Rainy</option>
+        </select>
+
+        <button onclick="analyzeSoil()">Analyze</button>
+
+        <div id="result">
+            <h3>Recommended Crops:</h3>
+            <p id="cropOutput"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Vignan's Institute of Information Technology. All Rights Reserved.</p>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+</html>
